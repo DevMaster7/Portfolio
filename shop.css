@@ -1,0 +1,884 @@
+:root {
+    --maincolor: #363636;
+    --seccolor: #dd7831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--maincolor);
+}
+
+.mIcon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 100px;
+    transition: .5s;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #00000000;
+}
+
+.mIcon:hover {
+    width: 255px;
+    background: linear-gradient(to right, #f731cc, rgb(110, 255, 38));
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.nikedaba {
+    margin-bottom: 50px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.perfumedaba {
+    margin-bottom: 50px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.watchdaba {
+    margin-bottom: 50px;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.cameradaba {
+    margin-bottom: 50px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.glassesdaba {
+    margin-bottom: 50px;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.walletdaba {
+    margin-bottom: 50px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.mainNike {
+    display: none;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #0000008a;
+    backdrop-filter: blur(2px);
+}
+
+.mainPerfume {
+    display: none;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0000008a;
+    backdrop-filter: blur(2px);
+}
+
+.mainWatch {
+    display: none;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0000008a;
+    backdrop-filter: blur(2px);
+}
+
+.mainCamera {
+    display: none;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0000008a;
+    backdrop-filter: blur(2px);
+}
+
+.mainGlasses {
+    display: none;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0000008a;
+    backdrop-filter: blur(2px);
+}
+
+.mainWallet {
+    display: none;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: #0000008a;
+    backdrop-filter: blur(2px);
+}
+
+.up {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    height: 90%;
+}
+
+.ri-arrow-left-line {
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+}
+
+.ri-arrow-right-line {
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.down {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    padding-right: 10px;
+}
+
+.sidelinkscon {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    backdrop-filter: blur(2.5px);
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.mainsidelinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 9px 1.5px;
+}
+
+.xmark {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.fa-xmark {
+    color: white;
+    font-size: 9vw;
+}
+
+.sidelinks {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    font-size: 6vw;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.sidelinks:hover {
+    background-color: rgba(99, 99, 99, 0.194);
+    border-radius: 5px;
+}
+
+.uselinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.ulinks {
+    font-size: 8vw;
+    color: rgb(196, 196, 196);
+}
+
+.navcon {
+    width: 100%;
+    height: 70px;
+    padding: 1vw 2.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px black;
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(25, 25, 25, 0.589);
+    display: flex;
+    justify-content: center;
+    display: none;
+    align-items: center;
+}
+
+.ri-menu-2-line {
+    color: white;
+    font-size: 35px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.linkscon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 600;
+    transition: 250ms ease-in-out;
+}
+
+.links:hover {
+    color: var(--seccolor);
+}
+
+.links::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--seccolor);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.links:hover:after {
+    transform: scaleX(1);
+}
+
+.shop::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--seccolor);
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.shop {
+    color: #e7e7e7;
+}
+
+.shop:hover {
+    color: #e7e7e7;
+}
+
+@media (max-width:500px) {
+    .navcon {
+        justify-content: space-between;
+        background-color: #363636a2;
+        backdrop-filter: blur(2px);
+        top: 0;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .menu {
+        display: flex;
+
+    }
+
+    .linkscon {
+        display: none;
+    }
+
+    .sidelinkscon {
+        top: 0;
+    }
+}
+
+
+/* Header Section Complete */
+
+
+.mainestcontainer {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 20px 0 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #000000;
+    background: url(assets/output-onlinepngtools.png);
+}
+
+.context1 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 600px;
+    padding-left: 35px;
+    margin-bottom: 1.5vw;
+}
+
+.heading {
+    color: white;
+}
+
+.heading span {
+    color: var(--seccolor);
+}
+
+.details {
+    color: white;
+    font-size: 18px;
+}
+
+.details span {
+    color: var(--seccolor);
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.boxcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 93%;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #808080;
+    padding: 17px 0 35px;
+}
+
+.items {
+    position: relative;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 40px 3px black;
+    border-radius: 10px;
+}
+
+.image2 {
+    display: block;
+    width: 100%;
+    height: 550px;
+    box-shadow: 0px 0px 40px 3px black;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.items:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textcont {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.lefttext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pricecont {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.proprice {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.prodisprice {
+    text-decoration: line-through;
+    color: #cacaca;
+    font-size: 20px;
+
+}
+
+.prodisprice sup {
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgb(222, 16, 16);
+}
+
+.righttext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prorev {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.prostars {
+    font-size: 24px;
+    color: yellow;
+}
+
+@media (max-width:850px) {
+    .maincontainer {
+        width: 93%;
+    }
+
+    .context1 {
+        padding: 0 100px 0px 15px;
+    }
+
+    .proName {
+        font-size: 29px;
+    }
+
+    .textcont {
+        flex-direction: column;
+    }
+
+    .proprice {
+        font-size: 27px;
+    }
+
+    .righttext {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .image2 {
+        height: 300px;
+    }
+}
+
+@media (max-width:500px) {
+    .mainestcontainer {
+        margin-top: 120px;
+    }
+
+    .maincontainer {
+        padding: 25px 0 45px;
+    }
+
+    .container1 {
+        width: 93%;
+        flex-direction: column;
+        gap: 60px;
+        margin: 0;
+    }
+
+    .context1 {
+        padding: 0 40px 30px 25px;
+    }
+
+    .details {
+        font-size: 16px;
+    }
+
+    .left {
+        gap: 60px;
+        margin: 0;
+    }
+
+    .right {
+        gap: 60px;
+    }
+
+    .boxcontainer {
+        padding: 17px 0 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .image2 {
+        height: 280px;
+    }
+
+    .text {
+        font-size: 36px;
+    }
+
+    .textcont {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .lefttext {
+        gap: 5px;
+    }
+
+    .righttext {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proName {
+        font-size: 28px;
+    }
+
+    .proprice {
+        font-size: 26px;
+    }
+
+    .prodisprice {
+        font-size: 18px;
+    }
+
+    .prorev {
+        font-size: 19px;
+    }
+
+    .prostars {
+        font-size: 20px;
+    }
+
+    .nikedaba {
+        width: 100%;
+        height: 270px;
+    }
+
+    .perfumedaba {
+        width: 100%;
+        height: 400px;
+    }
+
+    .watchdaba {
+        width: 100%;
+        height: 270px;
+    }
+
+    .cameradaba {
+        width: 100%;
+        height: 300px;
+    }
+
+    .glassesdaba {
+        width: 100%;
+        height: 250px;
+    }
+
+    .walletdaba {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+
+/* Main Section Complete */
+
+
+.mainfooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.container3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.img3 {
+    width: 90px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.text3 {
+    text-align: center;
+    color: rgb(196, 196, 196);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.text4 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.text4:hover {
+    color: var(--seccolor);
+}
+
+.text4::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--seccolor);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.text4:hover:after {
+    transform: scaleX(1);
+}
+
+.container4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 14px;
+    padding-top: 17px;
+    border-top: 1px solid white;
+}
+
+.text5 {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+.mylogo {
+    color: white;
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    display: none;
+    background: linear-gradient(to right, #f731cc, rgb(110, 255, 38));
+}
+
+@media (max-width:850px) {
+    .mylogo {
+        display: flex;
+    }
+
+    .mIcon {
+        display: flex;
+    }
+
+    .mIcon:hover {
+        background: #00000000;
+        width: 70px;
+    }
+
+    .container3 {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    .container4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        border: none;
+        padding: 0;
+    }
+}
+
+@media (max-width:500px) {
+    .mylogo {
+        display: flex;
+    }
+
+    .mIcon {
+        display: none;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .container4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        border: none;
+        padding: 0;
+    }
+}
+
+
+/* Footer Section Complete */
