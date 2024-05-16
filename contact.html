@@ -150,6 +150,19 @@
     const b = document.querySelector("main")
     const c = document.querySelector("footer")
 
+    var LastScrollTop = 0; 
+
+    navbar = document.querySelector(".navcon");
+    window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document.document.scrollTop;
+        if(scrollTop > LastScrollTop){
+            navbar.style.top = "-70px";
+        } else{
+            navbar.style.top = "0";
+        }
+        LastScrollTop = scrollTop;
+    })
+
     menubar.addEventListener("click", function () {
         a.style.display = "flex"
     })
@@ -162,15 +175,6 @@
     c.addEventListener("click", function () {
         a.style.display = "none"
     })
-
-    // function showSidebar() {
-    //     const sidebar = document.querySelector('.sidelinkscon')
-    //     sidebar.style.display = 'flex'
-    // }
-    // function hideSidebar() {
-    //     const sidebar = document.querySelector('.sidelinkscon')
-    //     sidebar.style.display = 'none'
-    // }
 </script>
 
 </html>
